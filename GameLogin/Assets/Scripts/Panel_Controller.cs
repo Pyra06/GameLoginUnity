@@ -150,6 +150,7 @@ public class Panel_Controller : MonoBehaviour
 
     private void OnError(PlayFabError Error)
     {
+        loader.SetActive(false);
         showNotificationMsg("ERROR", Error.GenerateErrorReport());
     }
     public void LogOut()
